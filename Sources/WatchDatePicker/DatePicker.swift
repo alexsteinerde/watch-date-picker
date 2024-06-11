@@ -4,6 +4,7 @@ import SwiftUI
 
 /// Option set that determines the displayed components of a date picker.
 @available(watchOS 8, *)
+@MainActor
 public struct DatePickerComponents: OptionSet {
   public let rawValue: UInt
   public init(rawValue: UInt) { self.rawValue = rawValue }
